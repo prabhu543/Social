@@ -4,6 +4,8 @@ import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
 import { ThemeProvider } from '@/components/theme/theme-provider';
 import Navbar from '@/frontend/navbar/Navbar';
+import Profile from '@/frontend/Home/Profile';
+import { Toaster } from 'sonner';
 
 const work_Sans = Work_Sans({
 	subsets: ['latin'],
@@ -30,8 +32,16 @@ export default function RootLayout({
 						defaultTheme='dark'
 						enableSystem
 						disableTransitionOnChange>
-						<Navbar />
-						<main className=''>{children}</main>
+						<div>
+							<Navbar />
+						</div>
+						<main className='w-full p-8  grid grid-cols-1 lg:grid-cols-12 gap-6'>
+							<div className='hidden lg:block lg:col-span-3'>
+								<Profile />
+							</div>
+							<div className='lg:col-span-9'>{children}</div>
+						</main>
+						<Toaster />
 					</ThemeProvider>
 				</body>
 			</html>

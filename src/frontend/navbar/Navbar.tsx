@@ -13,7 +13,7 @@ import MenuBtn from '../sidebar/Menu';
 
 export default function Navbar() {
   return (
-    <nav className='fixed left-0 top-0 flex items-center justify-between w-full p-4 dark:bg-gray-600 bg-gray-200'>
+    <nav className='sticky top-0 flex items-center justify-between w-full p-4 dark:bg-gray-600 bg-gray-200'>
       <div>
         {/* <Image src={'...'} fill alt='logo'/>  */}
         {/* logo is added here  */}

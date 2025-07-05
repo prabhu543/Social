@@ -89,10 +89,11 @@ model Follows {
 
 model Notification {
   id        String           @id @default(cuid())
-  userId    String
-  creatorId String
+  userId    String // the user who get notification 
+  creatorId String // who sends notification
   type      NotificationType
   read      Boolean          @default(false)
+  // notifications can be comments on posts or any other notification , so its made optional 
   postId    String?
   commentId String?
   createdAt DateTime         @default(now())

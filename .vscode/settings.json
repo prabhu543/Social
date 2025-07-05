@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
-    "cuid" // collision resistant unique identifier for prisma id : identifier
+    "cuid" ,  // collision resistant unique identifier for prisma id : identifier
+    "sonner"
   ]
 }
