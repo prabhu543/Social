@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { Work_Sans } from 'next/font/google';
 import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
-import Navbar from '@/components/Navbar';
 import { ThemeProvider } from '@/components/theme/theme-provider';
+import Navbar from '@/frontend/navbar/Navbar';
 
 const work_Sans = Work_Sans({
 	subsets: ['latin'],
@@ -31,7 +31,7 @@ export default function RootLayout({
 						enableSystem
 						disableTransitionOnChange>
 						<Navbar />
-						<main>{children}</main>
+						<main className=''>{children}</main>
 					</ThemeProvider>
 				</body>
 			</html>

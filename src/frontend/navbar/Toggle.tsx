@@ -3,12 +3,8 @@
 import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
-import { Button } from "./ui/button"
-
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
+import { Button } from "@/components/ui/button"
 
 export default function Toggle() {
   const { theme, setTheme } = useTheme()
