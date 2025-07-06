@@ -1,4 +1,4 @@
-'use client';
+"use client"
 
 import {
   SignedIn,
@@ -11,7 +11,9 @@ import Toggle from './Toggle';
 import { Button } from '@/components/ui/button';
 import MenuBtn from '../sidebar/Menu';
 
-export default function Navbar() {
+  function Navbar() {
+
+    
   return (
     <nav className='sticky top-0 flex items-center justify-between w-full p-4 dark:bg-gray-600 bg-gray-200'>
       <div>
@@ -44,3 +46,4 @@ export default function Navbar() {
     </nav>
   );
 }
+export default Navbar;
